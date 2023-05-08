@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Ysabeau:wght@300&display=swap');
+
+*, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: justify;
+}
+
+.header {
+    text-align: center;
+}
+
+.header-title {
+    color: white;
+    background-color: #2a80e3;
+    padding: 5px;
+}
+
+.header-profile {
+    color: white;
+    background-color: #1f3348;
+    max-height: 400px;
+}
+
+.header-profile img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.content {
+    display: flex;
+    margin-top: 20px;
+}
+
+.left, .right {
+    width: 50%;
+}
+
+.left {
+    padding-right: 20px;
+    padding-left: 50px;
+}
+
+.right {
+    padding-right: 50px;
+    padding-left: 20px;
+}
+
+.right p {
+    padding: 10px 0 10px 0;
+}
+
+.right hr {
+    border: solid 1px rgb(202, 202, 202);
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.footer table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer table tr td img {
+    width: 50px;
+    height: 50px;
+    padding: 10px 50px 0 50px
+}

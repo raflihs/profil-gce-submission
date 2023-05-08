@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Information</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">
+        <div class="header-title">My Personal Information</div>
+        <div class="header-profile">
+          <img src="https://storage.googleapis.com/bucketokeaja/FOTO%20FORMAL.jpg" alt="" />
+          <h2 style="font-size: 25px; padding: 10px">Rafli Hada Setiawan</h2>
+          <h4 style="font-size: 16px; font-weight: 200; padding-bottom: 20px">
+            CC-61 Bangkit Academy 2023
+          </h4>
+        </div>
+      </h1>
+      <div class="content">
+        <div class="left">
+          <h2 style="text-align: center; padding-bottom: 10px">About Me</h2>
+          <p>
+            Perkenalkan, Saya Rafli Hada Setiawan dari Universitas Negeri
+            Semarang dan saya berasal dari Kebumen, Jawa Tengah. Saat ini saya
+            mengikuti program Bangkit 2023 dengan
+            <i>learning path</i> Cloud Computing.
+          </p>
+          <br />
+          <p>
+            Saat ini saya sedang mengerjakan submission "Menjadi Google Cloud
+            Engineer" tentang Proyek Deploy Aplikasi Profile, yang mana kita
+            membuat suatu halaman profile pribadi dan di hosting ke Google Cloud
+            menggunakan Compute Engine atau App Engine. Tetapi untuk gambar yang
+            ditampilkan haruslah disimpan di Cloud Storage.
+          </p>
+        </div>
+        <div class="right">
+          <h2 style="text-align: center; padding-bottom: 10px">
+            Personal Information
+          </h2>
+          <p>Age : <b>21</b></p>
+          <hr />
+          <p>Phone : <b> +628971369553</b></p>
+          <hr />
+          <p>Email : <b>raflijr47@gmail.com</b></p>
+          <hr />
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-title">Find Me In!</div>
+        <table>
+          <tr>
+            <td>
+              <a href="https://github.com/raflihs"
+                ><img src="https://storage.googleapis.com/bucketokeaja/github%20logo.png" style="width: 63px; height: 63px"
+              /></a>
+            </td>
+            <td>
+              <a href="https://www.linkedin.com/in/rafli-hada-setiawan"
+                ><img src="https://storage.googleapis.com/bucketokeaja/linkedin%20logo.png" style="width: 40px; height: 37px"
+              /></a>
+            </td>
+            <td>
+              <a href="https://www.instagram.com/raflihs_/"
+                ><img src="https://storage.googleapis.com/bucketokeaja/ig%20logo.png"
+              /></a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script>
+      const { Storage } = require("@google-cloud/storage");
+      const storage = new Storage();
+    </script>
+  </body>
+</html>

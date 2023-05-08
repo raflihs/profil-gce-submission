@@ -1,0 +1,12 @@
+runtime: nodejs16
+handlers:
+  - url: /
+    static_files: public/index.html
+    upload: public/index.html
+  - url: /public
+    static_dir: public
+  - url: /(.*\.(gif|png|jpg))$
+    static_files: public/\1
+    upload: public/.*\.(gif|png|jpg)$
+  - url: /styles
+    static_dir: public/styles
